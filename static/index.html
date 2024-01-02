@@ -69,9 +69,9 @@
                 .then(data => {
                     const container = document.getElementById('data');
                     container.innerHTML = '';  // Clear the container
-                    for (let i = 0; i < data.length; i++) {
+                    for (let i = 0; i <1; i++) {
                         const div = document.createElement('div');
-                        div.textContent = data[i][0].description || "txn";
+                        div.textContent = data[i][0] || "txn";
                         div.className = 'update';  // Add a class for styling
                         container.appendChild(div);
                     }
