@@ -33,14 +33,21 @@
         function fetchData() {
             if (isPaused) return;
 
-            fetch('/latest')
-                .then(response => response.json())
-                .then(data => {
-                    let text = '';
-                    text += data[0][0].description + '\n\n';
-                    document.getElementById('data').textContent = text;
-                });
-        }
+            function fetchData() {
+                if (isPaused) return;
+
+                fetch('/latest')
+                    .then(response => response.json())
+                    .then(data => {
+                        let text = '';
+                        // Get the last 15 updates, or all of them if there are less than 15
+                        let updates = data[0].slice(-15);
+                        updates.forEach(update => {
+                            text += update.description + '\n\n';
+                        });
+                        document.getElementById('data').textContent = text;
+                    });
+            }
 
         function togglePause() {
             isPaused = !isPaused;
