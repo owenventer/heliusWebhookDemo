@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Webhook Data</title>
+    <script>
+        function fetchData() {
+            fetch('/latest')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('data').textContent = JSON.stringify(data, null, 2);
+                });
+        }
+
+        setInterval(fetchData, 5000); // Fetch data every 5 seconds
+    </script>
+</head>
+<body>
+    <h1>Latest Webhook Update</h1>
+    <pre id="data">No data yet.</pre>
+</body>
+</html>
