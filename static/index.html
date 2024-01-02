@@ -2,6 +2,30 @@
 <html>
 <head>
     <title>Webhook Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        #data {
+            margin: 0 auto;
+            width: 80%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            white-space: pre-wrap; /* Since <pre> elements have a default 'white-space: pre', this is added to wrap text */
+        }
+    </style>
     <script>
         function fetchData() {
             fetch('/latest')
