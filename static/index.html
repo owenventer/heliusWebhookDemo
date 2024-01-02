@@ -31,7 +31,11 @@
             fetch('/latest')
                 .then(response => response.json())
                 .then(data => {
-                    document.getElementById('data').textContent = JSON.stringify(data[0].description, null, 2);
+                    let text = '';
+                    for (let i = 0; i < data.length; i++) {
+                        text += JSON.stringify(data[i].description, null, 2) + '\n\n';
+                    }
+                    document.getElementById('data').textContent = text;
                 });
         }
 
