@@ -1,0 +1,143 @@
+{
+  "accountData": [
+    {
+      "account": "4qti6FcMybVSLL2k4rqRQ3Ph1a2jGrzPmBN8Wmt4A5wr",
+      "nativeBalanceChange": -50000,
+      "tokenBalanceChanges": []
+    },
+    {
+      "account": "NTYeYJ1wr4bpM5xo6zx5En44SvJFAd35zTxxNoERYqd",
+      "nativeBalanceChange": 0,
+      "tokenBalanceChanges": []
+    },
+    {
+      "account": "EoqWs1xsBXMZzJ1F3XHwWfuqknRLooLbSE5iT1Btyizh",
+      "nativeBalanceChange": 0,
+      "tokenBalanceChanges": []
+    },
+    {
+      "account": "4V3t37pygH6Kj3ZhdnLefDqcJnDtaDUWGtHhneuLTLac",
+      "nativeBalanceChange": 0,
+      "tokenBalanceChanges": []
+    },
+    {
+      "account": "ComputeBudget111111111111111111111111111111",
+      "nativeBalanceChange": 0,
+      "tokenBalanceChanges": []
+    },
+    {
+      "account": "M2mx93ekt1fmXSVkTrUL9xVFHkmME8HTUi5Cyc5aF7K",
+      "nativeBalanceChange": 0,
+      "tokenBalanceChanges": []
+    },
+    {
+      "account": "592MtisiEWpV3MEdMqX15T47jcSnnduy1MHbyf5sCtYP",
+      "nativeBalanceChange": 0,
+      "tokenBalanceChanges": []
+    },
+    {
+      "account": "5hxsAFc5rme18F3ctSCu5vfXHhwVQBc2Q1mC2h7RKuHi",
+      "nativeBalanceChange": 0,
+      "tokenBalanceChanges": []
+    },
+    {
+      "account": "autMW8SgBkVYeBgqYiTuJZnkvDZMVU2MHJh9Jh7CSQ2",
+      "nativeBalanceChange": 0,
+      "tokenBalanceChanges": []
+    },
+    {
+      "account": "E8cU1WiRWjanGxmn96ewBgk9vPTcL6AEZ1t6F6fkgUWe",
+      "nativeBalanceChange": 0,
+      "tokenBalanceChanges": []
+    },
+    {
+      "account": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "nativeBalanceChange": 0,
+      "tokenBalanceChanges": []
+    },
+    {
+      "account": "11111111111111111111111111111111",
+      "nativeBalanceChange": 0,
+      "tokenBalanceChanges": []
+    },
+    {
+      "account": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+      "nativeBalanceChange": 0,
+      "tokenBalanceChanges": []
+    },
+    {
+      "account": "1BWutmTvYPwDtmw9abTkS4Ssr8no61spGAvW1X6NDix",
+      "nativeBalanceChange": 0,
+      "tokenBalanceChanges": []
+    },
+    {
+      "account": "SysvarRent111111111111111111111111111111111",
+      "nativeBalanceChange": 0,
+      "tokenBalanceChanges": []
+    }
+  ],
+  "description": "4qti6FcMybVSLL2k4rqRQ3Ph1a2jGrzPmBN8Wmt4A5wr listed sols for 31.767 SOL on MAGIC_EDEN.",
+  "events": {
+    "nft": {
+      "amount": 31767000000,
+      "buyer": "",
+      "description": "4qti6FcMybVSLL2k4rqRQ3Ph1a2jGrzPmBN8Wmt4A5wr listed sols for 31.767 SOL on MAGIC_EDEN.",
+      "fee": 50000,
+      "feePayer": "4qti6FcMybVSLL2k4rqRQ3Ph1a2jGrzPmBN8Wmt4A5wr",
+      "nfts": [
+        {
+          "mint": "592MtisiEWpV3MEdMqX15T47jcSnnduy1MHbyf5sCtYP",
+          "tokenStandard": "NonFungible"
+        }
+      ],
+      "saleType": "INSTANT_SALE",
+      "seller": "4qti6FcMybVSLL2k4rqRQ3Ph1a2jGrzPmBN8Wmt4A5wr",
+      "signature": "2bcixi8jxdxTnrjptMD7WmY3EncBMXV3M11a7F2nErAAun22UkjGYk2XBRz88CxxUnuhRAfryH6afHyCoa8c4hvc",
+      "slot": 239472542,
+      "source": "MAGIC_EDEN",
+      "staker": "",
+      "timestamp": 1704206955,
+      "type": "NFT_LISTING"
+    }
+  },
+  "fee": 50000,
+  "feePayer": "4qti6FcMybVSLL2k4rqRQ3Ph1a2jGrzPmBN8Wmt4A5wr",
+  "instructions": [
+    {
+      "accounts": [],
+      "data": "3QAwFKa3MJAs",
+      "innerInstructions": [],
+      "programId": "ComputeBudget111111111111111111111111111111"
+    },
+    {
+      "accounts": [
+        "4qti6FcMybVSLL2k4rqRQ3Ph1a2jGrzPmBN8Wmt4A5wr",
+        "NTYeYJ1wr4bpM5xo6zx5En44SvJFAd35zTxxNoERYqd",
+        "EoqWs1xsBXMZzJ1F3XHwWfuqknRLooLbSE5iT1Btyizh",
+        "EoqWs1xsBXMZzJ1F3XHwWfuqknRLooLbSE5iT1Btyizh",
+        "592MtisiEWpV3MEdMqX15T47jcSnnduy1MHbyf5sCtYP",
+        "5hxsAFc5rme18F3ctSCu5vfXHhwVQBc2Q1mC2h7RKuHi",
+        "autMW8SgBkVYeBgqYiTuJZnkvDZMVU2MHJh9Jh7CSQ2",
+        "E8cU1WiRWjanGxmn96ewBgk9vPTcL6AEZ1t6F6fkgUWe",
+        "4V3t37pygH6Kj3ZhdnLefDqcJnDtaDUWGtHhneuLTLac",
+        "autMW8SgBkVYeBgqYiTuJZnkvDZMVU2MHJh9Jh7CSQ2",
+        "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "11111111111111111111111111111111",
+        "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+        "1BWutmTvYPwDtmw9abTkS4Ssr8no61spGAvW1X6NDix",
+        "SysvarRent111111111111111111111111111111111"
+      ],
+      "data": "2B3vSpRNKZZWu2mABPYXqfQWGfy5FbMFgf83C2khAPxk8bg",
+      "innerInstructions": [],
+      "programId": "M2mx93ekt1fmXSVkTrUL9xVFHkmME8HTUi5Cyc5aF7K"
+    }
+  ],
+  "nativeTransfers": [],
+  "signature": "2bcixi8jxdxTnrjptMD7WmY3EncBMXV3M11a7F2nErAAun22UkjGYk2XBRz88CxxUnuhRAfryH6afHyCoa8c4hvc",
+  "slot": 239472542,
+  "source": "MAGIC_EDEN",
+  "timestamp": 1704206955,
+  "tokenTransfers": [],
+  "transactionError": null,
+  "type": "NFT_LISTING"
+}
