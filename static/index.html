@@ -56,7 +56,7 @@
                 .then(response => response.json())
                 .then(data => {
                     let text = '';
-                    text += data[0][0].description ||"txn" + '\n\n';
+                    text += data[0].description ||"txn" + '\n\n';
                     document.getElementById('data').textContent = text;
                 });
         }
