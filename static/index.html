@@ -3,47 +3,37 @@
 <head>
     <title>Webhook Data</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-
-        h1 {
-            color: #333;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        #data {
-            margin: 0 auto;
-            width: 80%;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            white-space: pre-wrap; /* Since <pre> elements have a default 'white-space: pre', this is added to wrap text */
-        }
+        /* ...existing styles... */
     </style>
     <script>
+        var isPaused = false;
+        var intervalId = null;
+
         function fetchData() {
+            if (isPaused) return;
+
             fetch('/latest')
                 .then(response => response.json())
                 .then(data => {
                     let text = '';
-                    // for (let i = 0; i < data.length; i++) {
-                        text += JSON.stringify(data[0], null, 2) + '\n\n';
-                    // }
+                    text += JSON.stringify(data, null, 2) + '\n\n';
                     document.getElementById('data').textContent = text;
                 });
         }
 
-        setInterval(fetchData, 5000); // Fetch data every 5 seconds
+        function togglePause() {
+            isPaused = !isPaused;
+            document.getElementById('pauseButton').textContent = isPaused ? 'Resume' : 'Pause';
+        }
+
+        window.onload = function() {
+            intervalId = setInterval(fetchData, 5000); // Fetch data every 5 seconds
+        }
     </script>
 </head>
 <body>
     <h1>Latest Webhook Update</h1>
+    <button id="pauseButton" onclick="togglePause()">Pause</button>
     <pre id="data">No data yet.</pre>
 </body>
 </html>
