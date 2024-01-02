@@ -3,6 +3,7 @@
 <head>
     <title>Webhook Data</title>
      <style>
+        
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -24,6 +25,24 @@
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             white-space: pre-wrap; /* Since <pre> elements have a default 'white-space: pre', this is added to wrap text */
+        }
+        button {
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            padding: 10px 20px; /* Some padding */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+            text-align: center; /* Centered text */
+            text-decoration: none; /* No underline */
+            display: inline-block;
+            font-size: 16px;
+            margin: 20px 0; /* Some margin */
+            cursor: pointer; /* Mouse pointer on hover */
+            transition: background-color 0.3s; /* Transition effect on hover */
+        }
+
+        button:hover {
+            background-color: #45a049; /* Darker green on hover */
         }
     </style>
     <script>
@@ -53,7 +72,7 @@
     </script>
 </head>
 <body>
-    <h1>Latest Webhook Update</h1>
+    <h1>Webhook Demo</h1>
     <button id="pauseButton" onclick="togglePause()">Pause</button>
     <pre id="data">No data yet.</pre>
 </body>
