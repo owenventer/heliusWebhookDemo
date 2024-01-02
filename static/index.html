@@ -43,7 +43,7 @@
                         // Get the last 15 updates, or all of them if there are less than 15
                         let updates = data[0].slice(-15);
                         updates.forEach(update => {
-                            text += update.description + '\n\n';
+                            text += update.description||"transaction" + '\n\n';
                         });
                         document.getElementById('data').textContent = text;
                     });
