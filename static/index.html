@@ -33,7 +33,7 @@
                 .then(data => {
                     let text = '';
                     // for (let i = 0; i < data.length; i++) {
-                        text += JSON.stringify(data[0].description, null, 2) + '\n\n';
+                        text += JSON.stringify(data[0], null, 2) + '\n\n';
                     // }
                     document.getElementById('data').textContent = text;
                 });
