@@ -31,7 +31,7 @@
             fetch('/latest')
                 .then(response => response.json())
                 .then(data => {
-                    document.getElementById('data').textContent = JSON.stringify(data, null, 2);
+                    document.getElementById('data').textContent = JSON.stringify(data[0].description, null, 2);
                 });
         }
 
